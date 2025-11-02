@@ -1,1 +1,0 @@
-// Paste your PortfolioSite component code here from ChatGPT.\n

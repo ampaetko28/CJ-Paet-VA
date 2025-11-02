@@ -1,12 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CJ Paet Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyrus James Paet — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .card { backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-zinc-50 to-white text-zinc-900 min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b bg-white/70 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <a href="#top" class="font-semibold tracking-tight">Cyrus James Paet</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm opacity-80">
+        <a href="#work" class="hover:opacity-100">Work</a>
+        <a href="#services" class="hover:opacity-100">Services</a>
+        <a href="#skills" class="hover:opacity-100">Skills</a>
+        <a href="#experience" class="hover:opacity-100">Experience</a>
+        <a href="#about" class="hover:opacity-100">About</a>
+        <a href="#contact" class="hover:opacity-100">Contact</a>
+      </nav>
+      <a href="Cyrus-James-Paet-Resume.pdf" class="hidden md:inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-zinc-50">
+        Resume PDF
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="mx-auto max-w-6xl px-6 py-14">
+    <section class="grid gap-8 md:grid-cols-5 md:gap-12">
+      <div class="md:col-span-3">
+        <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">
+          No‑code & Web Automation Builder • Ops Engineering
+        </h1>
+        <p class="mt-4 text-lg opacity-90">
+          I ship small, sharp tools that save teams hours every week — spreadsheets to web apps, data cleanup to workflow automation, and everything in between.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="mailto:ampaetko@gmail.com?subject=Project%20Inquiry%20from%20Portfolio" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm shadow-sm hover:-translate-y-0.5 hover:shadow transition">
+            Email Me
+          </a>
+          <a href="Cyrus-James-Paet-Resume.pdf" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm shadow-sm">
+            Download CV
+          </a>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm opacity-80">
+          <span>Manila, Philippines</span>
+          <span>•</span>
+          <span>+63 9996725470</span>
+          <span>•</span>
+          <a class="underline" href="mailto:ampaetko@gmail.com">ampaetko@gmail.com</a>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <div class="overflow-hidden rounded-3xl border shadow-sm">
+          <img alt="CJ Paet portrait" src="cyrus.james.l.paet.jpg" class="w-full h-full object-cover">
+        </div>
+        <div class="mt-4 rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-base font-semibold">Download CV</h3>
+          <p class="mt-1 text-sm opacity-80">PDF version of my full resume.</p>
+          <a href="Cyrus-James-Paet-Resume.pdf" class="mt-3 inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm">Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Selected Work</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <article class="overflow-hidden rounded-2xl border shadow-sm bg-white/70 card">
+          <div class="aspect-[16/9] bg-zinc-200"></div>
+          <div class="p-5">
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="text-lg font-semibold">AAG NS File Generator</h3>
+              <span class="inline-flex items-center rounded-full border px-3 py-1 text-sm leading-6">2025</span>
+            </div>
+            <p class="mt-2 text-sm opacity-80">Uploads 2 Excel files, maps fields, merges by Order #, fills tracking gaps, edits inline, exports clean CSV.</p>
+            <ul class="mt-3 space-y-1 text-sm opacity-90 list-disc pl-5">
+              <li>Cut manual prep time from 1h → 8m</li>
+              <li>Eliminated copy‑paste errors</li>
+            </ul>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border shadow-sm bg-white/70 card">
+          <div class="aspect-[16/9] bg-zinc-200"></div>
+          <div class="p-5">
+            <div class="flex items-center justify-between gap-4">
+              <h3 class="text-lg font-semibold">Invoice Audit Validator</h3>
+              <span class="inline-flex items-center rounded-full border px-3 py-1 text-sm leading-6">2025</span>
+            </div>
+            <p class="mt-2 text-sm opacity-80">Matches store vs invoice data, cleans order numbers (e.g., '-M'), lists unmatched orders + piece count summary.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Services</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Data → Tools</h3>
+          <p class="mt-2 text-sm opacity-80">Turn messy Excel/CSV into reliable internal tools with clean exports and guardrails.</p>
+          <ul class="mt-3 space-y-1 text-sm list-disc pl-5">
+            <li>Excel → Web UI</li>
+            <li>CSV validators</li>
+            <li>Report generators</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Workflow Automation</h3>
+          <p class="mt-2 text-sm opacity-80">Glue apps together — parse, match, merge, and notify with minimal friction.</p>
+          <ul class="mt-3 space-y-1 text-sm list-disc pl-5">
+            <li>File watchers</li>
+            <li>Merging & dedupe</li>
+            <li>Email summaries</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Ops Dashboards</h3>
+          <p class="mt-2 text-sm opacity-80">Fast, pragmatic dashboards for tracking SLAs, inventory, and exceptions.</p>
+          <ul class="mt-3 space-y-1 text-sm list-disc pl-5">
+            <li>KPIs & alerts</li>
+            <li>Drill‑downs</li>
+            <li>Export to CSV/XLSX</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Skills & Tools</h2>
+      <div class="mt-6 flex flex-wrap gap-2 text-sm">
+        <span class="inline-flex items-center rounded-full border px-3 py-1">HTML/CSS/JS</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">React</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">Tailwind</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">Python</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">Excel ETL</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">OCR (PDF→Table)</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">Zapier/Make</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">NetSuite</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">QuickBooks</span>
+        <span class="inline-flex items-center rounded-full border px-3 py-1">Japanese (JLPT N4)</span>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Experience & Education</h2>
+      <div class="mt-6 grid gap-4">
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Karparts360 — Operations & Automation</h3>
+          <ul class="mt-2 text-sm opacity-90 list-disc pl-5 space-y-1">
+            <li>Built internal web tools for Excel→Web workflows, data merging, and CSV/XLSX exports.</li>
+            <li>Automated repetitive order validation and inventory processing steps.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Accenture — Operations</h3>
+          <ul class="mt-2 text-sm opacity-90 list-disc pl-5 space-y-1">
+            <li>Supported process-driven work with high attention to detail and SLA adherence.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Sitel — Customer Support</h3>
+          <ul class="mt-2 text-sm opacity-90 list-disc pl-5 space-y-1">
+            <li>Handled customer issues efficiently with clear communication.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-5 shadow-sm bg-white/70 card">
+          <h3 class="text-lg font-semibold">Education</h3>
+          <p class="mt-2 text-sm opacity-90">BS Nursing — Lyceum Northwestern University (April 2011)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">About</h2>
+      <p class="mt-6 opacity-90 leading-7">
+        I build internal tools that bend to your process, not the other way around — with fast iteration and a bias for useful. If your team is stuck inside spreadsheets, I can help you step up to a crisp web interface and exports that make accounting and ops happy.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Contact</h2>
+      <p class="mt-6 opacity-90">Ready to talk? Send a note about your workflow and where it slows down.</p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a href="mailto:ampaetko@gmail.com" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm shadow-sm">
+          Email me
+        </a>
+        <a href="Cyrus-James-Paet-Resume.pdf" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm shadow-sm">
+          Resume PDF
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-10">
+      <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm opacity-70">© <span id="year"></span> Cyrus James Paet. All rights reserved.</p>
+        <nav class="flex items-center gap-4 text-sm">
+          <a href="#work" class="opacity-80 hover:opacity-100">Work</a>
+          <a href="#services" class="opacity-80 hover:opacity-100">Services</a>
+          <a href="#about" class="opacity-80 hover:opacity-100">About</a>
+          <a href="#contact" class="opacity-80 hover:opacity-100">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
